@@ -1,11 +1,8 @@
-import { Button } from "./components/ui/button";
-
+import Header from "./components/section/Header";
 function App() {
   return (
-    <div className="from-linear1 to-linear2 h-screen bg-gradient-to-b">
-      <header className="font-dmSans container border border-black">
-        halo
-      </header>
+    <div className="h-screen bg-gradient-to-b from-linear1 to-linear2">
+      <Header />
     </div>
   );
 }
