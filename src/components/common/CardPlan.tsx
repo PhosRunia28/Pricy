@@ -5,6 +5,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import { Button } from "../ui/button";
 type OfferData = {
@@ -23,8 +24,17 @@ type Props = {
   dark?: boolean;
 };
 export default function CardPlan({ card, dark = false }: Props) {
+  const childVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+  const MotionCard = motion(Card);
   return (
-    <Card
+    <MotionCard
+      variants={childVariants}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.8, delay: 1 }}
       className={cn(
         "mx-auto flex h-fit w-full max-w-sm flex-col rounded-lg py-2 shadow-xl md:mx-0 md:h-full md:max-w-none lg:h-fit",
         {
@@ -96,6 +106,6 @@ export default function CardPlan({ card, dark = false }: Props) {
           Choose
         </Button>
       </CardFooter>
-    </Card>
+    </MotionCard>
   );
 }
