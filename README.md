@@ -1,8 +1,8 @@
-# CODE THE DESIGN - Lidia
+# CODE THE DESIGN - Pricy
 
-![Design preview for the Lidia challenge](./public/coverImage.png)
+![Design preview for the Pricy challenge](./public/coverImage.png)
 
-This is a design challenge to [Lidia](https://codedesign.dev/challenge/pricy).
+This is a design challenge to [Pricy](https://codedesign.dev/challenge/pricy).
 This is a [Figma File](https://www.figma.com/community/file/1185998177179693269).
 
 ## Author
@@ -11,9 +11,7 @@ This is a [Figma File](https://www.figma.com/community/file/1185998177179693269)
 
 ### Built with
 
-- React
-- Typescript
+- React + Typescript + Vite
 - Framer Motion
 - TailwindCSS
-- Vite
 - Shadcn-ui
